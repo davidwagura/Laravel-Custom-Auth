@@ -34,6 +34,9 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox" name="remember"> Remember Me</label>
                                 </div>
+                                <div class="mt-3 font: inherit">
+                                    <p>Already have an account <a href="http://127.0.0.1:8000/login">login</a></p>
+                                </div>    
                             </div>
                             <div class="d-grid mx-auto">
                                 <button type="submit" class="btn btn-dark btn-block">Sign up</button>
