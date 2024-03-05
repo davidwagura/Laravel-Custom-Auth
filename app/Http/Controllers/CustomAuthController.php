@@ -5,12 +5,14 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Session;
+
 class CustomAuthController extends Controller
 {
     public function index()
     {
         return view('auth.login');
     }
+
     public function customLogin(Request $request)
     {
         $request->validate([
@@ -24,10 +26,12 @@ class CustomAuthController extends Controller
         }
         return redirect("login")->withSuccess('Login details are not valid');
     }
+
     public function registration()
     {
         return view('auth.register');
     }
+
     public function customRegistration(Request $request)
     {
         $request->validate([
